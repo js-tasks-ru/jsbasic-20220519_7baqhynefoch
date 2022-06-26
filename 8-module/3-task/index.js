@@ -42,8 +42,8 @@ export default class Cart {
 
   getTotalCount() {
     let totalCount = 0;
-    for (let product of this.cartItems) {
-      totalCount = totalCount + product.count;
+    for (let cartItem of this.cartItems) {
+      totalCount = totalCount + cartItem.count;
     }
 
     return totalCount;
